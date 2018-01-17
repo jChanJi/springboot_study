@@ -1,0 +1,16 @@
+spring:
+  profiles:
+  #用jar包方式
+    # mvn install 编译
+    #java -jar [jar包] --spring.profiles.active=pro
+    #使用dev配置
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update #create每次创建数据库都会新建一个表，如果存在表会删掉重新创建
+      show-sql: true
