@@ -1,5 +1,5 @@
 # spring boot 基础
-###Controller的使用
+### Controller的使用
 >Controller的代码中只写mapping的函数，逻辑处理放到其他层当中
 ### 数据库的操作
 >使用jpa封装的hibernate对数据库操作，使用自定义的查询方法的时候
